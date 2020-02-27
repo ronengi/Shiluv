@@ -25,12 +25,14 @@
 \usepackage{multicol}
 \usepackage{mwe}
 \usepackage[ampersand]{easylist}
-\usepackage[unicode, hidelinks, bookmarksopen=true]{hyperref}
+%\usepackage[unicode, hidelinks, bookmarksopen=true]{hyperref}
+\usepackage[unicode=true,colorlinks=true,bookmarks=true]{hyperref}
 \usepackage{array}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 \usepackage{relsize}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+
 \usepackage{bidi}
 
 
@@ -59,7 +61,8 @@
 \textbf{ עבודת סיכום סמסטר א' תש"ף \\ \hspace{5pt} שילוב מחשב בהוראת המתמטיקה }
 \\[30pt]
 \small{ \selectlanguage{english} \textbf{\LaTeX{} source available at:\\
-\footnotesize{ \color{blue} \url{https://github.com/ronengi/Shiluv}}}}
+\hypersetup{urlcolor=blue}
+\footnotesize{\url{https://github.com/ronengi/Shiluv}}}}
 \\[30pt]
 }
 
@@ -79,10 +82,10 @@
 \selectlanguage{hebrew}
 \maketitle
 
+\hypersetup{linkcolor=black}
 \tableofcontents
 \include{Q1}
 \include{Q2}
-
 
 
 \end{document}
