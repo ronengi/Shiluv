@@ -1,0 +1,81 @@
+%\documentclass[10pt,oneside,a4paper]{article}
+\documentclass{article}
+
+
+%\usepackage[a4paper]{geometry}
+\usepackage[top=1.15in, bottom=1.15in, left=1in, right=1in]{geometry}
+%\usepackage{showframe}
+%
+\usepackage{iftex}
+\ifXeTeX
+\usepackage{fontspec}
+\else
+\usepackage{luatextra}
+\fi
+%
+\defaultfontfeatures{Ligatures=TeX}
+%
+
+\usepackage{amsmath}
+\everymath{\displaystyle}
+\usepackage{amssymb}
+\usepackage{polyglossia}
+\usepackage{fancybox}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{mwe}
+\usepackage[ampersand]{easylist}
+\usepackage[unicode, hidelinks, bookmarksopen=true]{hyperref}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\usepackage{relsize}
+\usepackage{fancyhdr}
+
+\usepackage{bidi}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setdefaultlanguage{hebrew}
+%\setmainlanguage{hebrew}
+\setotherlanguage{english}
+
+\newfontfamily\hebrewfont[Script=Hebrew]{David CLM}
+%\newfontfamily\hebrewfontsf[Script=Hebrew]{David CLM}
+%\newfontfamily\hebrewfonttt[Script=Hebrew]{David CLM}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\pagestyle{headings}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\lhead{\thepage}
+\cfoot{רונן גלעד-רז ronengi@gmail.com}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{
+\textbf{ עבודת סיכום סמסטר א' תש"ף \\ \hspace{5pt} שילוב מחשב בהוראת המתמטיקה } \\
+%[18pt]
+%\normalsize 
+}
+\author{רונן גלעד-רז ronengi@gmail.com}
+%\date{16.6.2019}
+%\author{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\setlength{\parindent}{0pt}     % don't indent first line of paragraph
+
+\selectlanguage{hebrew}
+\maketitle
+
+\tableofcontents
+\include{Q1}
+
+
+
+\end{document}
