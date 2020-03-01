@@ -3,9 +3,74 @@
 \section{שימוש  בגאוגברה}
 
 \subsection*{ערוגת הורדים}
-%\subsubsection*{ב.}
+השטח של ערוגת הפרחים נשאר קבוע.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsubsection*{א. יישומון אינטראקטיבי בגאוגברה}
+להלן %
+\hypersetup{urlcolor=blue}%
+\label{https://www.geogebra.org/classic/k7ybx9jt}%
+\href{https://www.geogebra.org/classic/k7ybx9jt}{קישור ליישומון גאוגברה}%
+. יישומון זה מאפשר לראות מיידית שהזזת הקטע %
+$ g $ %
+כל עוד הוא מאונך לקטע %
+$ AB $%
+, כמו גם הזזת בסיס המשולש, לא משנים את שטח המשולש.
+%\\[20pt]
 
-%\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{ב. פתרון בדרך פורמלית}
+מצאתי שתי הוכחות (שתיהן למעשה הצגות שונות של אותה הוכחה). שתיהן מתייחסות לשרטוט הבא:
+\\[10pt]
+\hspace*{50pt}
 \includegraphics[width=300pt]{/archive/Achva/תשף/א/05. שילוב מחשב בהוראת המתמטיקה/13 עבודה מסכמת/ronengi - shiluv 2.eps}
+
+%\selectlanguage{hebrew}
+\subsubsection*{ב.1. שימוש בטריגונומטריה}
+אשתמש בנוסחת שטח משולש: מחצית מכפלת שתי צלעות בסינוס הזווית בינהן.
+\\[-10pt]
+\hspace*{90pt}
+\parbox[t][130pt][t]{370pt}{
+\begin{align}
+S &= S_1 + S_2 = \\
+&= [ \tfrac{1}{2} \cdot a \cdot g \cdot \sin(\alpha) ] + [ \tfrac{1}{2} \cdot b \cdot g \cdot \sin(\beta) ] = \\
+&= \tfrac{1}{2} \cdot g \cdot [ a \cdot \sin(\alpha) + b \cdot \sin(\beta) ] = \\
+&= \tfrac{1}{2} \cdot g \cdot [ a \cdot \sin(\beta) + b \cdot \sin(\beta) ] = \\
+&= \tfrac{1}{2} \cdot g \cdot ( a + b ) \cdot \sin(\beta) = \\
+&= \tfrac{1}{2} \cdot g \cdot ( a + b ) \cdot \tfrac{AB}{(a + b)} = \\
+&= \tfrac{1}{2} \cdot g \cdot AB
+\end{align}
+}
+\\[10pt]
+(1), (2) שטח המשולש שווה לסכום שני חלקיו \\
+(3) הוצאנו $\tfrac{1}{2} \cdot g$ גורם משותף \\
+(4) $\alpha, \beta$ זוויות צמודות
+$ \sin(\alpha) = \underset{\scriptscriptstyle{= \; \sin(180\degree - \alpha)}}{\sin(\beta)} \qquad \Leftarrow \qquad \beta = 180\degree - \alpha \qquad \Leftarrow \qquad $\\[-7pt]
+(5) הוצאת $\sin(\beta)$ גורם משותף\\[2pt]
+(6) נתבונן במשולש 3: $\sin(\beta) = \tfrac{AB}{(a + b)}$\\[2pt]
+(7) צמצמנו מונה ומכנה ב: $(a + b)$
+%\\
+%$\bigtriangleup$
+ 
+%$\square \qedsymbol \blacksquare $
+%\selectlanguage{english}
+%\selectlanguage{hebrew}
+\subsubsection*{ב.2. חיבור שטחי משולשים}
+אשתמש בנוסחת שטח משולש: מחצית מכפלת הצלע בגובה לצלע.
+\\[-10pt]
+\hspace*{100pt}
+\parbox[t][80pt][t]{350pt}{
+\begin{align}
+S &= S_1 + S_2 = \\
+&= [ \tfrac{1}{2} \cdot g \cdot AE ] + [ \tfrac{1}{2} \cdot g \cdot EB ] = \\
+&= \tfrac{1}{2} \cdot g \cdot (AE + EB) = \\
+&= \tfrac{1}{2} \cdot g \cdot AB
+\end{align}
+}
+\\[10pt]
+(8) שטח המשולש שווה לסכום שני חלקיו \\
+(9) מכיוון ש- $g$ ניצב ל- $AB$ והגינה כולה היא מלבן, הגבהים לצלעות שווים לקטעים $AE, EB$ \\
+(10) הוצאנו $\tfrac{1}{2} \cdot g$ גורם משותף \\
+(11) סכום הקטעים $AE + EB$ הוא בדיוק $AB$
